@@ -11,19 +11,21 @@ public class Application {
 		List<Patient> patientList = new ArrayList<Patient>();
 		boolean flag;
 
-		System.out.println("Pharmacy Management System");
-		System.out.println("Please enter the number for the operation which you want to perform:");
-		System.out.println("1) Add new Patient");
-		System.out.println("2) List all Patients");
-		System.out.println("3) Search Patient");
-		System.out.println("4) Edit Patient");
-		System.out.println("5) Delete Patient");
+
 		Scanner s = new Scanner(System.in);
-		int input = s.nextInt();
+		int input;
 		boolean continueOperations = true;
 		String continueChoice;
 
 		while (continueOperations == true) {
+			System.out.println("Pharmacy Management System");
+			System.out.println("Please enter the number for the operation which you want to perform:");
+			System.out.println("1) Add new Patient");
+			System.out.println("2) List all Patients");
+			System.out.println("3) Search Patient");
+			System.out.println("4) Edit Patient");
+			System.out.println("5) Delete Patient");
+			input = s.nextInt();
 			switch (input) {
 			case 1:
 				Patient p = new Patient();
