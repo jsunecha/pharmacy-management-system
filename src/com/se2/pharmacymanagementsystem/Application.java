@@ -31,6 +31,7 @@ public class Application {
 				Patient p = new Patient();
 				System.out.println("Please enter the patient's registration number");
 				p.setRegistrationNumber(s.nextInt());
+				s.nextLine();
 				System.out.println("Please enter the patient's name");
 				p.setPatientName(s.nextLine());
 				System.out.println("Please enter the patient's date of birth in the following format: yyyy.MM.dd");
@@ -43,6 +44,7 @@ public class Application {
 				p.setGender(s.nextLine());
 				System.out.println("Please enter the patient's phone number");
 				p.setRegistrationNumber(s.nextInt());
+				s.nextLine();
 				patientList.add(p);
 				System.out.println("Do you want to continue with any of these operations?(y/n)");
 				continueChoice = s.nextLine();
