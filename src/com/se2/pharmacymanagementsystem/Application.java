@@ -20,7 +20,7 @@ public class Application {
 		System.out.println("5) Delete Patient");
 		Scanner s = new Scanner(System.in);
 		int input = s.nextInt();
-		boolean continueOperations = false;
+		boolean continueOperations = true;
 		String continueChoice;
 
 		while (continueOperations == true) {
@@ -163,7 +163,7 @@ public class Application {
 				else if(continueChoice.equals("n")) {
 					continueOperations = false;
 				}
-				
+			break;	
 			}
 		}
 
